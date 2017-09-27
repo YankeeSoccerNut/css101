@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .static-box{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        top: 100px;
+        bottom: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Position property has 4 options</h1>
+    <ol>
+      <li></a>Static</li>
+      <li>Relative</li>
+      <li>Absolute</li>
+      <li>Fixed</li>
+    </ol>
+
+    <a name="static"></a>
+    <div class="static">
+      <h1>Static</h1>
+      <p>Static is the default for the position property.</p>
+      <p>Top, bottom, left and right will NOT work with static</p>
+      <p>This element will show up at the next available position.  Nothing special and it cannot be moved.</p>
+    </div>
+    <div class="static-box"></div>
+    <a name="relative"></a>
+    <div class="relative">
+      <h1>Relative</h1>
+      <p>Same as Static but it can be moved with top, bottom, left, right</p>
+      <p>If you move it, the rest of the page will think it's where it's staic postion was.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fun with CSS</title>
+  <style type="text/css" media="screen">
+    #parent {
+      position: relative;
+      margin:auto;
+    }
+
+    #bubble {
+      height: 100px;
+      width: 100px;
+      background-color: lightblue;
+      border-radius: 50%;
+      position: relative;
+      margin:auto;
+    }
+    #box{
+      float:left;
+      height: 100px;
+      width: 100px;
+      background-color: inherit;
+      position:relative;
+      top: 35px;
+      left: 0px;
+    }
+
+    #oval {
+      width: 600px;
+      height: 125px;
+      background: #aba2a2;
+      border-radius: 100px / 50px;
+      margin: auto;
+    }
+    #portals{
+      float:left;
+      position:relative;
+      top: 35px;
+      left: 30px;
+    }
+    .portal {
+      height: 50px;
+      width: 50px;
+      background-color: lightgreen;
+      border-radius: 50%;
+      border-style: double;
+      margin-left: 25px;
+      margin-right: 25px;
+      float: left;
+    }
+
+    #trapezoid {
+      position: relative;
+      border-bottom: 75px solid #aba2a2;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 100px;
+      margin: auto;
+    }
+
+    #triangle-bottomright {
+    	width: 0;
+    	height: 0;
+    	border-bottom: 100px solid red;
+    	border-left: 100px solid transparent;
+    }
+    #triangle-bottomleft {
+    	width: 0;
+    	height: 0;
+    	border-bottom: 100px solid red;
+    	border-right: 100px solid transparent;
+      margin-left: 400px;
+    }
+    .landing_gear{
+      float: left;
+      margin:auto;
+    }
+    #invader{
+
+      box-shadow:
+      0 0 0 1em red,
+      0 1em 0 1em red,
+      -2.5em 1.5em 0 .5em red,
+      2.5em 1.5em 0 .5em red,
+      -3em -3em 0 0 red,
+      3em -3em 0 0 red,
+      -2em -2em 0 0 red,
+      2em -2em 0 0 red,
+      -3em -1em 0 0 red,
+      -2em -1em 0 0 red,
+      2em -1em 0 0 red,
+      3em -1em 0 0 red,
+      -4em 0 0 0 red,
+      -3em 0 0 0 red,
+      3em 0 0 0 red,
+      4em 0 0 0 red,
+      -5em 1em 0 0 red,
+      -4em 1em 0 0 red,
+      4em 1em 0 0 red,
+      5em 1em 0 0 red,
+      -5em 2em 0 0 red,
+      5em 2em 0 0 red,
+      -5em 3em 0 0 red,
+      -3em 3em 0 0 red,
+      3em 3em 0 0 red,
+      5em 3em 0 0 red,
+      -2em 4em 0 0 red,
+      -1em 4em 0 0 red,
+      1em 4em 0 0 red,
+      2em 4em 0 0 red;
+
+      background: red;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+
+      margin: auto;
+    }
+
+      }
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="parent">
+  <div id="bubble">
+    <div id="box"></div>
+    <div id="invader"></div>
+  </div>
+  <div id="trapezoid"></div>
+  <div id="oval">
+    <div id="portals">
+      <div class="portal"></div>
+      <div class="portal"></div>
+      <div class="portal"></div>
+      <div class="portal"></div>
+      <div class="portal"></div>
+    </div>
+  </div>
+
+  <!-- <div class="landing_gear">
+    <div id="triangle-bottomleft"></div>
+    <div id="triangle-bottomright"></div>
+  </div> -->
+</div>
+
+
+
+</body>
+
+</html>
